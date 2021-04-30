@@ -25,19 +25,19 @@ genderButton.addEventListener('click', () => {
 });
 
 //change race
-const raceInput = document.getElementById('race');
+const raceDropdown = document.getElementById('race-dropdown');
 const raceButton = document.getElementById('raceButton');
 const raceDisplay = document.getElementById('rdisplay');
 raceButton.addEventListener('click', () => {
-    raceDisplay.textContent = raceInput.value;
+    raceDisplay.textContent = raceDropdown.value;
 });
 
 //change class
-const classInput = document.getElementById('class');
+const classDropdown = document.getElementById('class-dropdown');
 const classButton = document.getElementById('classButton');
 const classDisplay = document.getElementById('cdisplay');
 classButton.addEventListener('click', () => {
-    classDisplay.textContent = classInput.value;
+    classDisplay.textContent = classDropdown.value;
 });
 
 // lawfulgood pic display button

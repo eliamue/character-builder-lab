@@ -20,7 +20,7 @@ export function getNeutralImage(someNeutralNumber) {
 }
 
 export function getChaoticImage(someChaoticNumber) {
-    if (someChaoticNumber > true) {
+    if (someChaoticNumber > 7) {
         return './assets/chaoticgood.jpg';
     } else if (someChaoticNumber > 4) {
         return '/assets/chaoticneutral.jpg';

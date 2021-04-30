@@ -14,6 +14,7 @@
 
 <body>
     <header>
+        <h1>D&D Character Builder</h1>
         <div class="gutter-right logo">
             <img src="assets/dice.png" />
         </div>
@@ -22,7 +23,7 @@
         <section class="main-section">
             <img class="main-logo" src="assets/dndrace.png" /><br>
             <h2>
-                Build a character
+                Character Basics
             </h2>
 
             <section id="character-basics">
@@ -33,43 +34,81 @@
                     <input id="gender" placeholder="Character Gender">
                     <button id="genderButton">Submit</button>
                 <div id="rdisplay">Race</div>
-                    <input id="race" placeholder="Character Race">
+                <select name="race-dropdown" id="race-dropdown">
+                    <option>Aarokocra</option>
+                    <option>Aasimar</option>
+                    <option>Centaur</option>
+                    <option>Changeling</option>
+                    <option>Dhampir</option>
+                    <option>Dragonborn</option>
+                    <option>Dwarf</option>
+                    <option>Elf</option>
+                    <option>Fairy</option>
+                    <option>Firbolg</option>
+                    <option>Genasi</option>
+                    <option>Gith</option>
+                    <option>Gnome</option>
+                    <option>Goblin</option>
+                    <option>Goliath</option>
+                    <option>Half-Elf</option>
+                    <option>Halfling</option>
+                    <option>Half-Orc</option>
+                    <option>Hexblood</option>
+                    <option>Human</option>
+                    <option>Kenku</option>
+                    <option>Kobold</option>
+                    <option>Orc</option>
+                    <option>Reborn</option>
+                    <option>Satyr</option>
+                    <option>Tabaxi</option>
+                    <option>Triton</option>
+                    <option>Tiefling</option>
+                    <option>Tortle</option>
+                    <option>Shifter</option>
+                    <option>Warforged</option>
+                    <option>Warlock</option>
+                    <option>Wizard</option>
+                </select>
                     <button id="raceButton">Submit</button>
                 <div id="cdisplay">Class</div>
-                    <input id="class" placeholder="Character Class">
-                    <button id="classButton">Submit</button>
-            </section>
-<!-- dropdown-->
-         <!--  <label for="alignment">Choose alignment:</label>
-        <!--  <select name="alignment" id="alignment">
-        <!---     <option value="./assets/lawfulgood.jpg">Lawful Good</option>
-          <!---     <option value="./assets/neutralgood.jpg">Neutral Good</option>
-          <!---      <option value="./assets/chaoticgood.jpg">Chaotic Good</option>
-          <!---      <option value="./assets/lawfulneutral.jpg">Lawful Neutral</option>
-          <!---      <option value="./assets/trueneutral.jpg">True Neutral</option>
-          <!---     <option value="./assets/chaoticneutral.jpg">Chaotic Neutral</option>
-          <!---      <option value="./assets/lawfulevil.jpg">Lawful Evil</option>
-          <!---      <option value="./assets/neutralevil.jpg">Neutral Evil</option>
-          <!---      <option value="./assets/chaoticevil.jpg">Chaotic Evil</option>
-          <!---  </select>
+                <select name="class-dropdown" id="class-dropdown">
+                    <option>Artificer</option>
+                    <option>Barbarian</option>
+                    <option>Bard</option>
+                    <option>Blood Hunter</option>
+                    <option>Cleric</option>
+                    <option>Druid</option>
+                    <option>Fighter</option>
+                    <option>Monk</option>
+                    <option>Paladin</option>
+                    <option>Ranger</option>
+                    <option>Rogue</option>
+                    <option>Sorcerer</option>
+                    <option>Warlock</option>
+                    <option>Wizard</option>
+                </select>
+                <button id="classButton">Submit</button>
+            </section><br>
+
     <!-- scale-->
-        <h2 id="alignment">Alignment</h2>
+        <h2 id="alignment">Alignment Ideas</h2>
+        <h3 id="describe-scale">For each type, select on a scale of 1-10 (with 1 being 'evil' and 10 being 'good') where your character falls to see examples of that alignment</h3>
             <section id="alignment-scale">
 
         <!--Lawful-->
             <p id="lawdisplay">Lawfulness</p>
                 <input id="lawful-input" type="number" min="1" max="10">
-                <button id="lawful-button">Who am I?</button>
+                <button id="lawful-button">Who am I like?</button>
                 <img src="" id="lawful-image" />
         <!-- Neutral-->
             <p id="neudisplay">Neutrality</p>
                 <input id="neutral-input" type="number" min="1" max="10">
-                <button id="neutral-button">Who am I?</button>
+                <button id="neutral-button">Am I like this?</button>
                 <img src="" id="neutral-image" />
         <!-- Chaotic-->
             <p id="chadisplay">Chaos</p>
-                <input id="chaos-input" type="number" min="1" max="10">
-                <button id="chaos-button">Who am I?</button>
+                <input id="chaotic-input" type="number" min="1" max="10">
+                <button id="chaotic-button">Or like this?</button>
                 <img src="" id="chaotic-image" />
             </section>
     
@@ -88,7 +127,7 @@
                 <button type="button" id="chaotic-evil-button">Chaotic Evil</button><br>-->
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right"> idk I just really like D&D alright?</div>
     </footer>
 
     <script type="module" src="./app.js"></script>

@@ -7,6 +7,7 @@ body {
 --color5: hsla(21, 69%, 73%, 1);
 --color6: rgb(172, 64, 223);
 --color7: rgb(224, 182, 208);
+--color8: rgb(243, 241, 241);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -27,7 +28,7 @@ main {
 
 section {
     background-color: var(--color5);
-    width: 1000px;
+    width: 720px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -43,7 +44,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(243, 241, 241);
+    background-color: var(--color8);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -51,22 +52,30 @@ header {
 footer {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color8);
     box-shadow: var(--shadow);
 }
 
+h1 {
+    color: var(--color1);
+    font-family: cursive;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-weight: bolder;
+}
 
 h2 {
     font-size: 2rem;
     font-weight: bold;
 }
+h3 {
+    text-align: center;
+    max-width: 70%;
+}
 
 .gutter-right {
     margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
 }
 
 header img {
@@ -83,39 +92,37 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color4);
+    background-color: var(--color8);
     box-shadow: var(--shadow);
 }
-#character-basics {
+#character-basics, #alignment-scale {
     background-color:var(--color3);
     color: black;
     font-family: cursive;
     font-size: 2rem;
     margin-bottom: 0px;
-    grid-row-start: 1;
-    grid-row-end: 12;
 }
-#nameButton, #genderButton, #raceButton, #classButton {
+#nameButton, #genderButton, #raceButton, #classButton, #lawful-button, #neutral-button, #chaotic-button {
     background-color: var(--color1);
-    height: 30px;
-    width: 50px;
-    margin-top: 10px;
+    height: 1fr;
+    width: 1fr;
+    margin: 5px;
     padding: 5px;
     font-size: 10px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 #name, #gender, #race, #class {
-    background-color: var(--color7);
+    background-color: var(--color8);
 }
 #alignment-buttons {
-    display: grid;
-    grid-template-columns: 80px 80px 80px;
-    grid-template-rows: 80px 80px 80px;
     justify-content: space-around;
     align-content: center;
     margin: 0px;
-    padding: 50px;
     border: inset 1px var(--color3);
     text-align: center;
+}
+#chaotic-image, #lawful-image, #neutral-image {
+    width: 500px;
 }
