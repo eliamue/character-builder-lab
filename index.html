@@ -9,59 +9,83 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Character Builder</title>
 </head>
 
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
+            <img src="assets/dice.png" />
         </div>
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png" />
+            <img class="main-logo" src="assets/dndrace.png" /><br>
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Build a character
             </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            <section id="character-basics">
+                <div id="ndisplay">Name</div>
+                    <input id="name" placeholder="Character name">
+                    <button id="nameButton">Submit</button>
+                <div id="gdisplay">Gender</div>
+                    <input id="gender" placeholder="Character Gender">
+                    <button id="genderButton">Submit</button>
+                <div id="rdisplay">Race</div>
+                    <input id="race" placeholder="Character Race">
+                    <button id="raceButton">Submit</button>
+                <div id="cdisplay">Class</div>
+                    <input id="class" placeholder="Character Class">
+                    <button id="classButton">Submit</button>
+            </section>
+<!-- dropdown-->
+         <!--  <label for="alignment">Choose alignment:</label>
+        <!--  <select name="alignment" id="alignment">
+        <!---     <option value="./assets/lawfulgood.jpg">Lawful Good</option>
+          <!---     <option value="./assets/neutralgood.jpg">Neutral Good</option>
+          <!---      <option value="./assets/chaoticgood.jpg">Chaotic Good</option>
+          <!---      <option value="./assets/lawfulneutral.jpg">Lawful Neutral</option>
+          <!---      <option value="./assets/trueneutral.jpg">True Neutral</option>
+          <!---     <option value="./assets/chaoticneutral.jpg">Chaotic Neutral</option>
+          <!---      <option value="./assets/lawfulevil.jpg">Lawful Evil</option>
+          <!---      <option value="./assets/neutralevil.jpg">Neutral Evil</option>
+          <!---      <option value="./assets/chaoticevil.jpg">Chaotic Evil</option>
+          <!---  </select>
+    <!-- scale-->
+        <h2 id="alignment">Alignment</h2>
+            <section id="alignment-scale">
 
-        </section>
+        <!--Lawful-->
+            <p id="lawdisplay">Lawfulness</p>
+                <input id="lawful-input" type="number" min="1" max="10">
+                <button id="lawful-button">Who am I?</button>
+                <img src="" id="lawful-image" />
+        <!-- Neutral-->
+            <p id="neudisplay">Neutrality</p>
+                <input id="neutral-input" type="number" min="1" max="10">
+                <button id="neutral-button">Who am I?</button>
+                <img src="" id="neutral-image" />
+        <!-- Chaotic-->
+            <p id="chadisplay">Chaos</p>
+                <input id="chaos-input" type="number" min="1" max="10">
+                <button id="chaos-button">Who am I?</button>
+                <img src="" id="chaotic-image" />
+            </section>
+    
+
+
+            <!-- <img id="lgpic" src="'./assets/lawfulgood.jpg'"/>
+                <button type="button" id="lawful-good-button">Lawful Good</button><br>
+
+                <button type="button" id="neutral-good-button">Neutral Good</button><br>
+                <button type="button" id="chaotic-good-button">Chaotic Good</button><br>
+                <button type="button" id="lawful-neutral-button">Lawful Neutral</button><br>
+                <button type="button" id="true-neutral-button">True Neutral</button><br>
+                <button type="button" id="chaotic-neutral-button">Chaotic Neutral</button><br>
+                <button type="button" id="lawful-evil-button">Lawful Evil</button><br>
+                <button type="button" id="neutral-evil-button">Neutral Evil</button><br>
+                <button type="button" id="chaotic-evil-button">Chaotic Evil</button><br>-->
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>

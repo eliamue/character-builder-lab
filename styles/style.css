@@ -1,17 +1,12 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+--color1: rgb(102, 111, 52);
+--color2: hsla(276, 16%, 41%, 1);
+--color3: hsla(347, 35%, 55%, 1);
+--color4: hsla(358, 70%, 66%, 1);
+--color5: hsla(21, 69%, 73%, 1);
+--color6: rgb(172, 64, 223);
+--color7: rgb(224, 182, 208);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -48,7 +43,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: rgb(243, 241, 241);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -62,7 +57,7 @@ footer {
 
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -81,7 +76,6 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
 footer {
     position: fixed;
     width: 100%;
@@ -89,25 +83,39 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color4);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
+#character-basics {
+    background-color:var(--color3);
+    color: black;
+    font-family: cursive;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    grid-row-start: 1;
+    grid-row-end: 12;
+}
+#nameButton, #genderButton, #raceButton, #classButton {
+    background-color: var(--color1);
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#name, #gender, #race, #class {
+    background-color: var(--color7);
+}
+#alignment-buttons {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0px;
+    padding: 50px;
+    border: inset 1px var(--color3);
+    text-align: center;
+}
